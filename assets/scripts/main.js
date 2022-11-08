@@ -82,9 +82,8 @@ function initFormHandler() {
 
   // B3. TODO - Add an event listener for the 'submit' event, which fires when the
   //            submit button is clicked
-  const button_submit = document.querySelector('[type=submit]');
 
-  button_submit.addEventListener("click", (event)=>{
+  formID.addEventListener("submit", (event)=>{
   // B4. TODO - Create a new FormData object from the <form> element reference above
   event.preventDefault(); // stop page reloading.
   const formData = new FormData(formID);
